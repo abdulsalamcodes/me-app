@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+          font-family: 'Roboto', sans-serif;
+      }
+      .hero {
+        display: grid;
+        width: 90%;
+        margin: 1rem auto;
+        grid-template-columns:  repeat(auto-fit, minmax(40%, 1fr));
+        gap: 3rem;
+      }
+      .hero h1 {
+        font-family: "Luckiest Guy", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 130px;
+        line-height: 130px;
+        /* identical to box height */
+
+        color: #260078;
+      }
+      img {
+          max-width: 100%;
+      }
+
+      .hero h2 {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 70px;
+        color: #140040;
+      }
+
+      p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 50px;
+        /* or 143% */
+
+        color: #140040;
+      }
+      #email {
+        background: #FFFFFF;
+        border: 1px solid #8C8C8C;
+        box-sizing: border-box;
+        border-radius: 50px;
+        width: 80%;
+        /* height: 50px; */
+        padding: 1rem;
+        font-size: 30px;
+      }
+      #submit {
+        background: #260078;
+        border: 2px solid #8C8C8C;
+        box-sizing: border-box;
+        border-radius: 50px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 50px;
+        padding: 10px 2rem;
+        /* identical to box height, or 167% */
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <main>
+      <div class="hero">
+        <img src="./images/hero.png" alt="" />
+
+        <div class="hero__content">
+          <h1>ME!</h1>
+          <h2>The Complete You Without You!</h2>
+          <p>The smart voice app that learns 
+            and replicates your speech 
+            process & pattern.
+            Your perfect copy.</p>
+          <form action="insert.php" method="POST">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" required placeholder="Your email" />
+
+            <label for="name"></label>
+            <input type="text" name="username" id="" required />
+            <input type="submit" value="Get Notified"  id="submit"/>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
