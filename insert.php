@@ -5,9 +5,9 @@
 
 
     if(!empty($username) || !empty($email) ) {
-        $host = "qf5dic2wzyjf1x5x.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-        $dbUsername = "obuaewm0590j8zbw";
-        $dbPassword = "ewvvbfn1qn41a74g";
+        $host = "localhost";
+        $dbUsername = "root";
+        $dbPassword = "";
         $dbname = "meapp";
 
         // create a connection
