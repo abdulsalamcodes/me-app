@@ -1,0 +1,263 @@
+:root {
+    --gutter: 5%;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 140rem;
+}
+header {
+    position: relative;
+}
+.pulsate {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+    padding: 1rem;
+    transform: scaleX(.9);
+}
+
+.pulsate-img1 {
+    margin-right: 1rem;
+}
+
+.hero {
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+}
+.hero h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13rem;
+    line-height: 13rem;
+    /* identical to box height */
+
+    color: #260078;
+}
+.hero__image {
+    position: relative;
+}
+.image2 {
+    position: absolute;
+    z-index: 10;
+    left: -30px;
+    top: -10px;
+    max-width: 90%;
+}
+.image1 {
+    max-width: 80%;
+}
+
+.hero h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    color: #140040;
+}
+
+.exclam {   
+    color: #0A0A0A;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 50px;
+    /* or 143% */
+    color: #140040;
+    margin-bottom: 2%;
+}
+
+#email {
+    background: #FFFFFF;
+    /* Purple */
+    border: 1px solid #260078;
+    width: 80%;
+    height: 66px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /* height: 50px; */
+    padding: 1rem;
+    font-size: 16px;
+    margin-bottom: var(--gutter);
+}
+
+#email::placeholder {
+    font-size: 21px;
+    line-height: 25px;
+    color: #260078;
+    font-family: inherit;
+}
+
+.mockup {
+    margin: 0 5rem;
+}
+
+.btn {
+    border-radius: 8px;
+    background: #260078;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 2rem;
+    height: 58px;
+    width: 301px; 
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    display: block;
+}
+
+.btn:hover {
+    animation: pulsate .5s;
+}
+
+
+
+/* Section 1: Me is always learning */
+.section {
+    margin: 10% 0 ;
+}
+.section1 {
+    background: url('../images/icon-heart.svg'), url('../images/bg_1.png');
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll;
+    background-size: 300px , cover;
+    background-position: 600px 200px, right bottom;
+    /* background-position: sticky; */
+    z-index: 10;
+    margin-top: 10%;
+    padding: 20% 0 20%;
+}
+
+.section_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1_img {
+    margin-right: 3rem;
+}
+
+.heading {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    z-index: 100000;
+}
+
+.para {
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 50px;
+    color: #FFFFFF;
+    /* grid-row: 1 / span 3; */
+}
+
+.section2 {
+    background:  url('../images/icon-key.svg'), url('../images/bg_2.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* background-size: cover; */
+    background-position: 250px 225px, right bottom;
+    margin-top: -20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    z-index: 100;
+    /* fill: #d3d0d063; */
+}
+
+.section2 .section_content {
+    flex-direction: row-reverse;
+    z-index: 300;
+}
+
+.section2_img {
+    margin-left: 3rem;
+}
+
+.footer {
+    text-align: center;
+    background: url('../images/footer_bg.png');
+    padding-top: 20%;
+    padding-bottom: 10%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, 500px;
+    position: relative;
+}
+.footer_heading {
+    font-family: Luckiest Guy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 120px;
+    line-height: 120px;
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 10;
+}
+
+.footer #email {
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.footer_btn {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    /* line-height: 19px; */
+    text-align: center;
+    color: #260078;
+    margin: 0 auto;
+}
+
+.footer_btn:hover {
+    font-weight: bolder;
+
+}
+.bg-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    /* z-index: -1; */
+}
