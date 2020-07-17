@@ -6,9 +6,9 @@ html {
 html {
     font-size: 100%;
 }
-* {
+/* * {
     overflow-x: hidden;
-}
+} */
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -269,6 +269,9 @@ ul {
 }
 
 @media(max-width: 1300px) {
+    .hero_content {
+        padding: 0;
+    }
     .hero_heading {
         font-style: normal;
         font-weight: 900;
@@ -295,6 +298,9 @@ ul {
     }
 }
 @media(max-width: 500px) {
+    #email {
+        width: 80%;
+    }
     .col-sm-10, img.img {
         margin-top: 3rem;
         width: 90%;
