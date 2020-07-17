@@ -236,7 +236,11 @@ body {
     /* z-index: -1; */
 }
 .mockup {
-    width: 100%;
+    /* width: 100%; */
+    border-radius: 50px;
+}
+.mockup-plain {
+    border: 5px inset  #C4C4C4;
 }
 
 .mockup:hover {
