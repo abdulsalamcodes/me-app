@@ -275,7 +275,7 @@ ul {
 
 @media(max-width: 600px) {
     html {
-        font-size: 50%;
+        font-size: 60%;
     }
 }
 @media(max-width: 500px) {
@@ -295,7 +295,7 @@ ul {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
+        /* font-size: 25px; */
         line-height: 40px;
     }   
     /* img {

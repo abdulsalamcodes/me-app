@@ -36,12 +36,12 @@
       <div class="container">
 
         <div class="row align-items-center">
-          <div class="hero__image col" data-aos="fade-down">
+          <div class="hero__image col" data-aos="zoom-in" data-aos-duration="3000">
             <img src="./images/hero.png" alt="" class="img-fluid image1" />
             <img src="./images/face-mask.png" alt="" class="image2 img-fluid">
           </div>
     
-          <div class="hero__content col ml-3">
+          <div class="hero__content col ml-3" data-aos="zoom-out" data-aos-duration="2000">
             <header class="d-flex align-items-center">
               <h1 class="logo mr-auto">ME<span class="exclam">!</span></h1>
               <!-- <div class="pulsate">
@@ -77,9 +77,9 @@
       <div class="scroll-indicator" id="section1" data-scroll-indicator-title="feature1"></div>
       <div class="container py-5">
         <div class="row align-items-center">
-          <img src="./images/mockup.png" alt="mockup" class="col-md-4 img img-fluid " data-aos="fade-up-right">
+          <img src="./images/mockup.png" alt="mockup" class="col-md-4 img img-fluid " data-aos="zoom-in-up" data-aos-duration="3000">
   
-          <div class="section_text col-md-8 col-sm-12" data-aos="fade-up-left">
+          <div class="section_text col-md-8 col-sm-12" data-aos="zoom-out" data-aos-duration="2000">
             <h2 class="heading">ME! <br>
               Is always Learning...</h2>
   
@@ -99,9 +99,9 @@
       <div class="scroll-indicator" id="section2" data-scroll-indicator-title="feature2"></div>
       <div class="container py-5">
         <div class="row align-items-center flex-lg-row-reverse">
-          <img src="./images/mockup.png" alt="mockup" class="col-md-4 img img-fluid" data-aos="fade-up-right">
+          <img src="./images/mockup.png" alt="mockup" class="col-md-4 img img-fluid" data-aos="zoom-in-up" data-aos-duration="3000">
   
-          <div class="section_text col-md-8" data-aos="fade-up-left">
+          <div class="section_text col-md-8" data-aos="zoom-out" data-aos-duration="2000">
             <h2 class="heading">ME! <br>
               Is always Ready...</h2>
   
@@ -130,15 +130,15 @@
       <div class="container py-5">
 
         <div class="row align-items-center">
-          <img src="./images/mockup.png" alt="mockup" class="col-md-4 img" data-aos="fade-up-right">
+          <img src="./images/mockup.png" alt="mockup" class="col-md-4 img" data-aos="zoom-in-up" data-aos-duration="3000">
   
-          <div class="section_text col-md-8" data-aos="fade-up">
+          <div class="section_text col-md-8" data-aos="zoom-out" data-aos-duration="2000">
             <h2 class="heading">ME! <br>
               Is always Accountable...</h2>
   
             <p class="para">
               ME! will always provide and show all your available data stored in the cloud including ME! conversations
-              with your friends or family, YOU! wouldn’t miss a thing or be lost in conversations you never had.
+              with your friends or family, <br> YOU! wouldn’t miss a thing or be lost in conversations you never had.
             </p>
           </div>
         </div>
@@ -161,12 +161,12 @@
 
   <footer class="footer  text-center">
     <div class="container">
-      <h1 class="footer_heading" data-aos="fade-up">COMING SOON !</h1>
+      <h1 class="footer_heading" data-aos="zoom-in-up">COMING SOON !</h1>
       <p class="para">Be the first to be to know me!</p>
       
       <img src="./images/footer_dot.png" alt="" class="dot-img img-fluid">
       <div class="scroll-indicator" id="footer" data-scroll-indicator-title="footer"></div>
-      <form action="insert.php" method="POST" data-aos="fade-up">
+      <form action="insert.php" method="POST" data-aos="fade-down" data-aos-duration="1000">
         <label for="email"></label>
         <input type="email" name="email" id="email" required placeholder="Your email" />
   
@@ -212,15 +212,8 @@
   <!-- Custom Javascript -->
   <script>
     // Animate on Scroll Js Init
-    AOS.init({
-      duration: 1000,
-      // once: true,
-      delay: 0
-    });
+    AOS.init();
 
-    $(function () {
-      new WOW().init()
-    })
 
     // Slick Carousel Js Init
     $('.center').slick({
