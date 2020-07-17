@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300;400;900&display=swap"
     rel="stylesheet" />
 
@@ -14,183 +14,261 @@
 
   <!-- Animate on Scroll CSS  -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <script src="https://unpkg.com/scrollreveal"></script>
 
+  
+  <!-- Slick carousel -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.min.css">
   <!-- Custom css -->
   <link rel="stylesheet" href="css/style.css">
-
-
-  <!-- carousel -->
-
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
   
-<!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-// Add the new slick-theme.css if you want the default styling
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
-
-
-  <title>Document</title>
+  <title>Me!</title>
 </head>
 
-<body>
-  <link rel="stylesheet" href="./style.css" />
+<body data-aos="fade-in">
   <main>
     <!-- Hero section starts -->
-    <section class="hero container">
-      <div class="hero__image">
-        <img src="./images/hero.png" alt="" class="image1" />
-        <img src="./images/face-mask.png" alt="" class="image2">
-      </div>
+    
+    <section class="hero">  
+      <div class="scroll-indicator" id="header" data-scroll-indicator-title="hero-section"></div>
+      <div class="container">
 
-      <div class="hero__content">
-        <header>
-          <h1>ME<span class="exclam">!</span></h1>
-          <div class="pulsate">
-            <img src="./images/ellipse.png" alt="" class="pulsate-img1">
-            <img src="./images/subtract.png" alt="" class="pulsate-img">
+        <div class="row align-items-center">
+          <div class="hero__image col" data-aos="fade-down">
+            <img src="./images/hero.png" alt="" class="img-fluid image1" />
+            <img src="./images/face-mask.png" alt="" class="image2 img-fluid">
           </div>
-        </header>
-        <h2>The Complete You Without You!</h2>
-        <p>The smart voice app that learns
-          and replicates your speech <br>
-          process & pattern. <br>
-          Your perfect copy.</p>
-        <form action="insert.php" method="POST">
-          <label for="email"></label>
-          <input type="email" name="email" id="email" required placeholder="Your email" />
-
-          <label for="name"></label>
-          <!-- <input type="text" name="username" id="" required /> -->
-          <input type="submit" value="Get Notified" id="submit" class="btn" />
-        </form>
+    
+          <div class="hero__content col ml-3">
+            <header class="d-flex align-items-center">
+              <h1 class="logo mr-auto">ME<span class="exclam">!</span></h1>
+              <!-- <div class="pulsate">
+                <img src="./images/ellipse.png" alt="" class="pulsate-img1">
+                <img src="./images/subtract.png" alt="" class="pulsate-img">
+              </div> -->
+    
+            </header>
+            <h3 class="hero_heading">The Complete You <br> Without You!</h3>
+            <p class="hero_para">The smart voice app that learns <br>
+              and replicates your speech <br>
+              process & pattern. <br>
+              Your perfect copy.</p>
+            <form action="insert.php" method="POST">
+              <label for="email"></label>
+              <input type="email" name="email" id="email" class="email" required placeholder="Your email" />
+    
+              <label for="name"></label>
+              <!-- <input type="text" name="username" id="" required /> -->
+              <input type="submit" value="Get Notified" id="submit" class="btn" />
+            </form>
+          </div>
+        </div>
+        
       </div>
-    </section>
+      </section>
     <!-- Hero section ends -->
 
 
     <!-- section 1 starts  -->
 
-    <section class="section section1">
-      <div class="section_content container">
-        <img src="./images/mockup.png" alt="mockup" class="section1_img">
+    <section class=" section1">
+      <div class="scroll-indicator" id="section1" data-scroll-indicator-title="feature1"></div>
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <img src="./images/mockup.png" alt="mockup" class="col-lg-4 img img-fluid " data-aos="fade-up-right">
+  
+          <div class="section_text col-lg-8 col-sm-12" data-aos="fade-up-left">
+            <h2 class="heading">ME! <br>
+              Is always Learning...</h2>
+  
+            <p class="para">
+              ME! Smart A.I technology constantly listens to you speak, respond and interact to capture and store your
+              voice components and evaluate data, also gathers data from all your online presence. <br>
+              To speak, sound, reply and pronounce everthing just like
+              YOU!.
+            </p>
+          </div>
 
-        <div class="section_text">
-          <h2 class="heading">ME! <br>
-            Is always Learning...</h2>
+        </div>
+      </div>
+    </section>
 
-          <p class="para">
-            ME! Smart A.I technology constantly listens to you speak, respond and interact to capture and store your
-            voice components and evaluate data, also gathers data from all your online presence. <br>
-            To speak, sound, reply and pronounce everthing just like
-            YOU!.
-          </p>
+    <section class=" section2">
+      <div class="scroll-indicator" id="section2" data-scroll-indicator-title="feature2"></div>
+      <div class="container py-5">
+        <div class="row align-items-center flex-lg-row-reverse">
+          <img src="./images/mockup.png" alt="mockup" class="col-lg-4 img img-fluid" data-aos="fade-up-right">
+  
+          <div class="section_text col-lg-8" data-aos="fade-up-left">
+            <h2 class="heading">ME! <br>
+              Is always Ready...</h2>
+  
+            <p class="para ">
+              ME! is always ready to replace you in your conversations after gathering enough data on you. Sshh, No one
+              will ever know.
+              Here is what ME! can do:
+              <ul class="para">
+                <li>- Sound perfectly like YOU! <br> (even if you stutter).</li>
+                <li>- Listen & give replies based on data from you.</li>
+                <li>- ME! becomes YOU!</li>
+              </ul>
+              
+              
+              
+            </p>
+          </div>
+  
         </div>
 
       </div>
     </section>
 
-    <section class="section section2">
-      <div class="section_content container">
-        <img src="./images/mockup.png" alt="mockup" class="section2_img">
+    <section class="section3">
+      <div class="scroll-indicator" id="section3" data-scroll-indicator-title="feature3"></div>
+      <div class="container py-5">
 
-        <div class="section_text">
-          <h2 class="heading">ME! <br>
-            Is always Ready...</h2>
-
-          <p class="para ">
-            ME! is always ready to replace you in your conversations after gathering enough data on you. Sshh, No one
-            will ever know.
-            Here is what ME! can do:
-            - Sound perfectly like YOU! (even if you stutter).
-            - Listen & give replies based on data from you.
-            - ME! becomes YOU!
-          </p>
+        <div class="row align-items-center">
+          <img src="./images/mockup.png" alt="mockup" class="col-lg-4 img" data-aos="fade-up-right">
+  
+          <div class="section_text col-lg-8" data-aos="fade-up">
+            <h2 class="heading">ME! <br>
+              Is always Accountable...</h2>
+  
+            <p class="para">
+              ME! will always provide and show all your available data stored in the cloud including ME! conversations
+              with your friends or family, YOU! wouldn’t miss a thing or be lost in conversations you never had.
+            </p>
+          </div>
         </div>
-
       </div>
     </section>
-    <section class="section">
+
+    <section class="carousel-section">
+      <div class="scroll-indicator" id="carousel" data-scroll-indicator-title="screenshots"></div>
       <div class="center">
-        <img src="./images/mockup.png" alt="" class="mockup">
-        <img src="./images/mockup.png" alt="" class="mockup">
-        <img src="./images/mockup.png" alt="" class="mockup">
-        <img src="./images/mockup.png" alt="" class="mockup">
-        <img src="./images/mockup.png" alt="" class="mockup">
-        <img src="./images/mockup.png" alt="" class="mockup">
+        <img src="./images/mockup.png" alt="" class="mockup  m-4" data-aos="zoom-up">
+        <img src="./images/mockup.png" alt="" class="mockup  m-4" data-aos="zoom-up">
+        <img src="./images/mockup.png" alt="" class="mockup  m-4" data-aos="zoom-up">
+        <img src="./images/mockup.png" alt="" class="mockup  m-4" data-aos="zoom-up">
+        <img src="./images/mockup.png" alt="" class="mockup  m-4" data-aos="zoom-up">
+        <img src="./images/mockup.png" alt="" class="mockup  m-4" data-aos="zoom-up">
       </div>
     </section>
+ 
   </main>
 
-  <footer class="footer">
-    <h1 class="footer_heading">COMING SOON !</h1>
-    <p class="para">Be the first to be to know me!</p>
+  <footer class="footer text-center">
+    <div class="container">
+      <h1 class="footer_heading" data-aos="fade-up">COMING SOON !</h1>
+      <p class="para">Be the first to be to know me!</p>
+      
+      <img src="./images/footer_dot.png" alt="" class="dot-img img-fluid">
+      <div class="scroll-indicator" id="footer" data-scroll-indicator-title="footer"></div>
+      <form action="insert.php" method="POST" data-aos="fade-up">
+        <label for="email"></label>
+        <input type="email" name="email" id="email" required placeholder="Your email" />
+  
+        <label for="name"></label>
+        <!-- <input type="text" name="username" id="" required /> -->
+        <input type="submit" value="Get Notified" id="submit" class="btn footer_btn" />
+      </form>
 
-    <form action="insert.php" method="POST">
-      <label for="email"></label>
-      <input type="email" name="email" id="email" required placeholder="Your email" />
-
-      <label for="name"></label>
-      <!-- <input type="text" name="username" id="" required /> -->
-      <input type="submit" value="Get Notified" id="submit" class="btn footer_btn" />
-    </form>
-    <img src="./images/footer_dot.png" alt="" class="bg-img">
+    </div>
   </footer>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
   
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
+  <!-- Slick Carousel Js -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="./js/script.js"></script>
 
   <!-- Animate on Scroll JS -->
-  <!-- <script src="./js/jquery/jquery.js" type="text/javascript"></script> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <!--JS for Easy Scroll Dots -->
+  <script src="./js/easyScrollDots.min.js"></script>
+
+
+  <!-- Custom Javascript -->
   <script>
+    // Animate on Scroll Js Init
     AOS.init({
       duration: 1000,
-      once: true,
-      delay: 3000
+      // once: true,
+      delay: 0
     });
 
     $(function () {
       new WOW().init()
     })
 
-
+    // Slick Carousel Js Init
     $('.center').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      autoplay: true,
+      nextArrow: null,
+      prevArrow: null,
+      swipe: true,
+      responsive: [
+      {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+      },
+      {
+          breakpoint: 375,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+      },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+
+    // Easy Dots Init
+    easyScrollDots({
+      'fixedNav':false,
+      'fixedNavId': '',
+      'fixedNavUpward': false
+    });
+    
   </script>
 </body>
 
