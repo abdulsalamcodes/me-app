@@ -29,7 +29,7 @@ body {
 }
 .hero {
     margin-bottom: 5rem;
-    min-height: 90vh;
+    /* min-height: 90vh; */
 }
 .hero_heading {
     font-style: normal;
@@ -48,7 +48,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 2.1875rem;
-    /* line-height: 50px; */
+    line-height: 1.5;
     /* or 143% */
 
 
@@ -141,7 +141,7 @@ body {
     background: #FFFFFF;
     border: 1px solid #260078;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 3px;
     width: 100%;
     height: 4.125rem;
     padding: 1rem;
@@ -201,11 +201,7 @@ body {
     background-image: linear-gradient(120deg, #260078, #260078);
     position: relative;
     padding-top: 10%;
-    padding-bottom: 20%;
-    min-height: 100vh;
-}
-form {
-    z-index: 10;
+    padding-bottom: 10%;
 }
 
 
