@@ -6,7 +6,9 @@ html {
 html {
     font-size: 100%;
 }
-
+* {
+    overflow-x: hidden;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -200,8 +202,7 @@ body {
 .footer {
     background-image: linear-gradient(120deg, #260078, #260078);
     position: relative;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding: 20% 0;
 }
 
 
@@ -267,11 +268,26 @@ ul {
     padding: 0;
 }
 
+@media(max-width: 1300px) {
+    .hero_heading {
+        font-style: normal;
+        font-weight: 900;
+        /* font-size: 60px; */
+        /* line-height: 70px; */
+        font-style: normal;
+        font-weight: 900;
+        font-size: 3rem;
+        color: #140040;
+    }
+   
+}
 @media(max-width: 993px) {
     html {
         font-size: 70%;
     }
+   
 }
+
 
 @media(max-width: 600px) {
     html {
