@@ -8,11 +8,55 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
-/* .container {
-    max-width: 80%;
-} */
+.wrapper {
+    max-width: 1440;
+    overflow: hidden;
+}
+.dots {
+    /* position: absolute; */
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #2600788e;
+    border-radius: 50px;
+    position: absolute;
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+
+}
+
+.dot:nth-child(1) {
+    left: 30%;
+}
+.dot:nth-child(2) {
+    left: 10%;
+}
+.dot:nth-child(3) {
+    left: 56%;
+}
+.dot:nth-child(4) {
+    left: 28%;
+}
+.dot:nth-child(5) {
+    left: 15%;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 1;
+    }
+}
+
 .logo {
     font-family: 'Luckiest Guy', cursive;
     font-style: normal;
@@ -30,8 +74,13 @@ body {
     color: black;
 }
 .hero {
-    margin-bottom: 5rem;
-    /* min-height: 90vh; */
+    margin-bottom: 2rem;
+    /* overflow: hidden; */
+    /* padding: 5rem 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
 }
 .hero_heading {
     font-style: normal;
@@ -46,10 +95,9 @@ body {
 
 .hero_para {
     color: #140040;
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.1875rem;
+    font-size: 2rem;
     line-height: 1.5;
     /* or 143% */
 
@@ -61,6 +109,10 @@ body {
 .hero__image {
     position: relative;
     animation: bounce 2s linear infinite;
+    text-align: center;
+}
+.image2, .image1 {
+    max-width: 80%;
 }
 
 @keyframes bounce {
@@ -79,7 +131,7 @@ body {
 
 .image2 {
     position: absolute;
-    left: 0;
+    left:50px;
     top: 0;
     z-index: -10;
 }
@@ -120,7 +172,6 @@ body {
 }
 
 .heading {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 3.75rem;
@@ -131,7 +182,6 @@ body {
 }
 
 .para {
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 2.1875rem;
@@ -153,7 +203,7 @@ body {
 }
 
 #email::placeholder {
-    font-family: Roboto;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 1.3125rem;
@@ -309,8 +359,6 @@ ul {
         display: none;
     }
     .para {
-
-        font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         /* font-size: 25px; */
@@ -327,49 +375,6 @@ ul {
     }
 }
 
-/* popup */
-
-
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  /* The actual popup (appears on top) */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
   
   /* Add animation (fade in the popup) */
   @-webkit-keyframes fadeIn {
@@ -380,4 +385,46 @@ ul {
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  }
+
+  /* preloader */
+  .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(259, 100%, 24%, 0.8);
+    z-index: 999999;
+    }
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    /* margin: 100px auto; */
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
   }
